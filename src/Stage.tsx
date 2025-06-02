@@ -58,9 +58,11 @@ export class Stage extends StageBase<InitStateType, ChatStateType, MessageStateT
     }
 
     readMessageState(messageState: MessageStateType) {
-        this.fetishes = messageState['fetishes'] ?? [];
-        this.mechanism = messageState['mechanism'] ?? '';
-        this.flavor = messageState['flavor'] ?? '';
+        if (messageState) {
+            this.fetishes = messageState['fetishes'] ?? [];
+            this.mechanism = messageState['mechanism'] ?? '';
+            this.flavor = messageState['flavor'] ?? '';
+        }
     }
 
     writeMessageState() {

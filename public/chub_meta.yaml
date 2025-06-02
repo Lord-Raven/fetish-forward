@@ -47,12 +47,15 @@ config_schema:
       description: "Fetishes allowed by the stage; the stage will select a handful of these at random to become the focal point of this chat."
       type: object
       properties:
-        Anal: {type: boolean}
-        Bimboism: {type: boolean}
-        Bondage: {type: boolean}
+        Anal:
+          title: "Anal"
+          type: boolean
+        Bimboism:
+          type: boolean
+        Bondage:
+          type: Boolean
         Cheating: {type: boolean}
         Corruption: {type: boolean}
-        Cross-Dressing: {type: boolean}
         Cuckoldry: {type: boolean}
         Femdom: {type: boolean}
         Futanari: {type: boolean}
