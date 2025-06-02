@@ -50,11 +50,12 @@ config_schema:
       properties:
         Anal:
           title: "Anal"
-          type: boolean
+          type: boolean,
+          default: true
         Bimboism:
           title: "Bimboism"
           type: boolean
-        Cheating: {type: string}
+        Cheating: {type: boolean,  default: true}
         Corruption: {type: integer}
         Cuckoldry: {type: boolean}
         Femdom: {type: boolean}
