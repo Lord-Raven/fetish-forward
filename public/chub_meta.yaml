@@ -40,6 +40,7 @@ tags:
 # If your stage requires a configuration but has no
 #   defined schema, it won't work.
 config_schema:
+  title: "Configuration for Fetish Forward"
   type: object
   properties:
     fetishes:
@@ -51,22 +52,8 @@ config_schema:
           title: "Anal"
           type: boolean
         Bimboism:
+          title: "Bimboism"
           type: boolean
-        Bondage:
-          type: Boolean
-        Cheating: {type: boolean}
-        Corruption: {type: boolean}
-        Cuckoldry: {type: boolean}
-        Femdom: {type: boolean}
-        Futanari: {type: boolean}
-        Humiliation: {type: boolean}
-        Hypnosis: {type: boolean}
-        Incest: {type: boolean}
-        Inflation: {type: boolean}
-        Massochism: {type: boolean}
-        Rapeplay: {type: boolean}
-        Sadism: {type: boolean}
-        Sizeplay: {type: boolean}
       default: {}
 
 # The schema of the state that you store.
