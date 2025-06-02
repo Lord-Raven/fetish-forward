@@ -54,6 +54,19 @@ config_schema:
         Bimboism:
           title: "Bimboism"
           type: boolean
+        Cheating: {type: string}
+        Corruption: {type: integer}
+        Cuckoldry: {type: boolean}
+        Femdom: {type: boolean}
+        Futanari: {type: boolean}
+        Humiliation: {type: boolean}
+        Hypnosis: {type: boolean}
+        Incest: {type: boolean}
+        Inflation: {type: boolean}
+        Massochism: {type: boolean}
+        Rapeplay: {type: boolean}
+        Sadism: {type: boolean}
+        Sizeplay: {type: boolean}
       default: {}
 
 # The schema of the state that you store.
