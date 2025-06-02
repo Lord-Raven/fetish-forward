@@ -69,6 +69,13 @@ config_schema:
         Sadism: {type: boolean}
         Sizeplay: {type: boolean}
       default: {Anal: true}
+    fetishList:
+      title: "Fetish Pool 2"
+      description: "A different representation attempt"
+      type: array
+      items:
+        type: string
+      default: ["Anal", "Bimboism", "Cheating"]
 
 # The schema of the state that you store.
 # This isn't needed even if you do store state,
