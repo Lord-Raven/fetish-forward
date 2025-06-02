@@ -50,7 +50,7 @@ config_schema:
       properties:
         Anal:
           title: "Anal"
-          type: boolean,
+          type: boolean
           default: true
         Bimboism:
           title: "Bimboism"
@@ -68,7 +68,7 @@ config_schema:
         Rapeplay: {type: boolean}
         Sadism: {type: boolean}
         Sizeplay: {type: boolean}
-      default: {}
+      default: {Anal: true}
 
 # The schema of the state that you store.
 # This isn't needed even if you do store state,
