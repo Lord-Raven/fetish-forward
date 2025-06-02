@@ -11,6 +11,9 @@ creator_notes: "
 This simple stage allows you to inject all manner of fetishes into your chats. It selects a set of fetishes, 
 a random mechanism by which those fetishes are introduced to the scenario (e.g., government mandate or char's fondest dreams), 
 and the extremity of promotion. It's all random by default, but you can override these settings from the configuration window.
+
+I've marked this one NSFL; there is a broad spectrum of junk in here and I didn't want to have to handle with care. 
+It's all configurable and you know what you can handle, so please be smart about it.
 "
 
 # 'PUBLIC', 'PRIVATE', or 'UNLISTED'.
@@ -28,9 +31,10 @@ position: 'NONE'
 
 # Self-explanatory.
 tags:
+ - 'NSFL'
+ - 'NSFW'
  - 'Stage'
  - 'Add-On'
- - 'NSFW'
 
 # The schema of any user-supplied config.
 # If your stage requires a configuration but has no
@@ -38,9 +42,29 @@ tags:
 config_schema:
   type: object
   properties:
-    health:
-      type: integer
-      default: 100
+    fetishes:
+      title: "Fetish Pool"
+      description: "Fetishes allowed by the stage; the stage will select a handful of these at random to become the focal point of this chat."
+      type: object
+      properties:
+        Anal: {type: boolean}
+        Bimboism: {type: boolean}
+        Bondage: {type: boolean}
+        Cheating: {type: boolean}
+        Corruption: {type: boolean}
+        Cross-Dressing: {type: boolean}
+        Cuckoldry: {type: boolean}
+        Femdom: {type: boolean}
+        Futanari: {type: boolean}
+        Humiliation: {type: boolean}
+        Hypnosis: {type: boolean}
+        Incest: {type: boolean}
+        Inflation: {type: boolean}
+        Massochism: {type: boolean}
+        Rapeplay: {type: boolean}
+        Sadism: {type: boolean}
+        Sizeplay: {type: boolean}
+      default: {}
 
 # The schema of the state that you store.
 # This isn't needed even if you do store state,
