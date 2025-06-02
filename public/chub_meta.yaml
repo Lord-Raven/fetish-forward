@@ -2,13 +2,19 @@
 #   in which case these values can be managed in the UI.
 
 # The name of the stage.
-# project_name: "Stage Template"
+project_name: "Fetish Forward"
 
 # A short tagline to show in search.
-# tagline: "A base template for all stages."
+tagline: "Introduce a curated array of naughtiness to your chats."
+
+creator_notes: "
+This simple stage allows you to inject all manner of fetishes into your chats. It selects a set of fetishes, 
+a random mechanism by which those fetishes are introduced to the scenario (e.g., government mandate or char's fondest dreams), 
+and the extremity of promotion. It's all random by default, but you can override these settings from the configuration window.
+"
 
 # 'PUBLIC', 'PRIVATE', or 'UNLISTED'.
-# visibility: 'PUBLIC'
+visibility: 'PRIVATE'
 
 # 'ADJACENT' | 'NONE' | 'COVER' | 'FULLSCREEN'
 # 'ADJACENT' is default. The frame will display on the side of the
@@ -18,14 +24,13 @@
 #   but leave the text input box.
 # 'FULLSCREEN' will make nothing below the header bar
 #   show except for your stage.
-# position: 'ADJACENT'
+position: 'NONE'
 
 # Self-explanatory.
-# tags:
-#  - 'Stage'
-#  - 'Admin'
-#  - 'Template'
-#  - 'Base'
+tags:
+ - 'Stage'
+ - 'Add-On'
+ - 'NSFW'
 
 # The schema of any user-supplied config.
 # If your stage requires a configuration but has no
